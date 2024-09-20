@@ -1,0 +1,47 @@
+.container-countdown {
+    display: flex;
+    justify-content: center;
+}
+
+.countdown {
+    font-size: 60px;
+    border: none;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 100px;
+    background: linear-gradient(to right, #e332a2, #d28ac1);
+}
+
+#myVideo {
+    position: fixed;
+    right: auto;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+#myButton {
+    display: none;
+}
+
+@media all and (max-width:500px) {
+    #myButton {
+        display: block;
+        padding: 10px;
+        background: linear-gradient(to right, #e332a2, #d28ac1);
+        border-radius: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    body {
+        background: linear-gradient(to right, #e332a2, #d28ac1);
+    }
+    #myVideo {
+        height: 100%;
+    }
+}
